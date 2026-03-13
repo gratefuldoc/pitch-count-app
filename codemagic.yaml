@@ -7,6 +7,8 @@ workflows:
       flutter: stable
       xcode: latest
     scripts:
+      - name: Flutter Doctor
+        script: flutter doctor -v
       - name: Set up Flutter
         script: |
           flutter pub get
